@@ -1,8 +1,11 @@
-def letterPos(w):
-    if (w == 0):
-        return True
+def letterPos(w, letter):
 
-    else:
-        return False
+    for i in range(0, len(w)):
+        if letter == w[i]:
+            return i + 1
 
-print (letterPos(wat))
+    return 0
+
+
+print(letterPos("sunshine", "e"))
+
